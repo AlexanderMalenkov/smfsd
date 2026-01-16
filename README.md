@@ -37,8 +37,8 @@ src/entities/user/
 ├── model/
 │   └── types.ts
 ├── ui/
-│   └── User.tsx
-└── user.sass
+    └── User.tsx
+    └── user.scss
 ```
 
 Happy coding!

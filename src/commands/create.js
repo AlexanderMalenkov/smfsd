@@ -33,7 +33,7 @@ const createFeature = async (layer, name) => {
     const componentName = name.charAt(0).toUpperCase() + name.slice(1);
     await fs.writeFile(path.join(uiPath, `${componentName}.tsx`), `export const ${componentName} = () => <div>${componentName}</div>;`);
 
-    await fs.writeFile(path.join(basePath, `${name}.sass`), "");
+    await fs.writeFile(path.join(uiPath, `${name}.scss`), "");
 
     console.log(chalk.green(`✅ ${layer} "${name}" создана в src/${layerDir}/`));
   } catch (e) {
